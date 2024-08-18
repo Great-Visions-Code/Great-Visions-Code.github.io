@@ -282,6 +282,42 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 736px) {
+			/* Adjust image and text layout for very small screens */
+			.wrapper.style1 .container .row {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
+		
+			.wrapper.style1 .container .row .col-4,
+			.wrapper.style1 .container .row .col-8 {
+				width: 100%;
+				margin-bottom: 20px; /* Add spacing between the image and text */
+			}
+		
+			.wrapper.style1 .container .row .col-4 {
+				order: 1; /* Ensure image comes first */
+			}
+		
+			.wrapper.style1 .container .row .col-8 {
+				order: 2; /* Ensure text comes after the image */
+			}
+		
+			.wrapper.style1 .container .row img {
+				max-width: 100%;
+				height: auto;
+			}
+		
+			.wrapper.style1 .container .row header h1 {
+				font-size: 1.5em; /* Adjust font size for better readability */
+			}
+		
+			.wrapper.style1 .container .row p {
+				font-size: 1em; /* Adjust font size for better readability */
+			}
+		}
+
 /* Row */
 
 	.row {
