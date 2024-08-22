@@ -1937,52 +1937,33 @@ input, select, textarea {
 			width: auto;
 		}
 
-/* Icons */
+/* Base Icon Style */
+.icon {
+    text-decoration: none;
+    font-size: 2em; /* Adjust size as needed */
+    color: #333; /* Default color, can be overridden */
+    display: inline-block;
+}
 
-	.icon {
-		text-decoration: none;
-		text-decoration: none;
-	}
+/* Solid Icons */
+.icon.solid:before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
 
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
+/* Brand Icons */
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400; /* Ensure brand icons use regular weight */
+}
 
-		.icon:before {
-			font-size: 1.25em;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-
-		.icon.featured {
-			color: #EA8A95;
-			display: block;
-			margin: 0 0 1.5em 0;
-			cursor: default;
-		}
-
-			.icon.featured:before {
-				font-size: 6em;
-			}
+/* Featured Icons */
+.icon.featured {
+    color: #EA8A95; /* Example color, adjust as needed */
+    font-size: 4.5em; /* Larger size for featured icons */
+    display: block;
+    margin: 0 0 .5em 0;
+}
 
 /* Wrappers */
 
