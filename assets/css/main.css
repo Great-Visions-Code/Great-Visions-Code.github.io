@@ -74,6 +74,51 @@ input, select, textarea {
 
 /* Basic */
 
+.codecademy-card .contrib-list span {
+  display: block;        /* Forces onto a new line */
+  margin-top: 0.125rem;  /* Small gap under the link */
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.codecademy-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.codecademy-heading .badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 10;
+  border-radius: 999px;
+  background-color: #4f90ff; /* accent color */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.35rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background-color: #4f90ff; /* your accent color */
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 	html {
 		box-sizing: border-box;
 	}
